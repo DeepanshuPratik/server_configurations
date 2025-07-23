@@ -1,0 +1,12 @@
+[Unit]
+Description=Cloudflare Tunnel for Venture Connect
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/cloudflared tunnel run venture-connect-tunnel
+Restart=always
+User=root
+Environment=PATH=/usr/bin:/usr/local/bin
+
+[Install]
+WantedBy=multi-user.target

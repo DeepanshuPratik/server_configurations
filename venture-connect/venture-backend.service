@@ -1,0 +1,13 @@
+[Unit]
+Description=Venture Connect Backend
+After=network.target
+
+[Service]
+WorkingDirectory=/root/deployments/venture-connect/backend
+ExecStart=/usr/bin/node server.js
+Restart=always
+User=root
+Environment=PATH=/usr/bin:/usr/local/bin
+
+[Install]
+WantedBy=multi-user.target
