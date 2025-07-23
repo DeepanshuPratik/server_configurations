@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/root/deployments/venture-connect/frontend
-ExecStart=/usr/bin/npx serve -s build
+ExecStart=/root/.nvm/versions/node/v20.19.3/bin/npx serve -s build
 Restart=always
 User=root
 Environment=PATH=/usr/bin:/usr/local/bin

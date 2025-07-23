@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/root/deployments/venture-connect/backend
-ExecStart=/usr/bin/node server.js
+ExecStart=/root/.nvm/versions/node/v20.19.3/bin/node server.js
 Restart=always
 User=root
 Environment=PATH=/usr/bin:/usr/local/bin
